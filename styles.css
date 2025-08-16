@@ -1,0 +1,73 @@
+body {
+  min-width: 300px;
+  background: #18181b;
+  color: #f4f4f5;
+  font-family: 'Segoe UI', 'Inter', Arial, sans-serif;
+  margin: 0;
+}
+
+.popup-container {
+  padding: 18px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.popup-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.slider-row label {
+  flex: 1 0 80px;
+}
+
+.slider-row input[type="range"] {
+  flex: 2 1 120px;
+  accent-color: #6366f1;
+}
+
+.slider-row span {
+  width: 40px;
+  text-align: right;
+  font-size: 0.95em;
+  color: #a3a3a3;
+}
+
+#reset {
+  margin-top: 10px;
+  padding: 7px 0;
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#reset:hover {
+  background: #4f46e5;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #6366f1;
+}

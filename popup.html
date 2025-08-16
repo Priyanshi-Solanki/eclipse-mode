@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eclipse Mode</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="popup-container">
+    <h1 class="popup-title">Eclipse Mode</h1>
+    <div class="toggle-row">
+      <label for="toggle">Enable</label>
+      <input id="toggle" type="checkbox">
+    </div>
+    <div class="slider-row">
+      <label for="brightness">Brightness</label>
+      <input id="brightness" type="range" min="50" max="150" value="90">
+      <span id="brightness-value">90%</span>
+    </div>
+    <div class="slider-row">
+      <label for="contrast">Contrast</label>
+      <input id="contrast" type="range" min="50" max="200" value="110">
+      <span id="contrast-value">110%</span>
+    </div>
+    <div class="slider-row">
+      <label for="saturation">Saturation</label>
+      <input id="saturation" type="range" min="0" max="300" value="100">
+      <span id="saturation-value">100%</span>
+    </div>
+    <div class="slider-row">
+      <label for="hue">Hue</label>
+      <input id="hue" type="range" min="0" max="360" value="0">
+      <span id="hue-value">0°</span>
+    </div>
+    <button id="reset">Reset to Defaults</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

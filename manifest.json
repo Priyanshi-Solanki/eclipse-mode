@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Eclipse Mode - Global Dark Mode",
+  "version": "1.0.0",
+  "description": "Force dark mode on all websites with customizable filter controls.",
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "50": "icons/icon50.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "50": "icons/icon50.png"
+  }
+}
